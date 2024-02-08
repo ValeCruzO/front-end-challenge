@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.container{
+  padding: 1.5rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buttonDelete{
+  background-color: #539165; /* Green */
+  border: none;
   color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover{
+    background-color: #2e583a;
+  }
+}
+.searchBar{
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos para la tabla */
+.tableVehicles {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #EEEEEE;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableVehicles  th, .tableVehicles td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tableVehicles th {
+  background-color: #11468F;
+  color: white;
+  cursor: pointer;
+}
+
+.tableVehicles tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.tableVehicles tr:hover {
+  background-color: #ddd;
 }
